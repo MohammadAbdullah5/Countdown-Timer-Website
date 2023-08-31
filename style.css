@@ -1,0 +1,88 @@
+body{
+    display: grid;
+    place-items: center; 
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #34d399;
+    color: white;
+}
+
+h1{
+    margin-bottom: -20vh;
+    color: white;
+    font-size: 10vh;
+    font-weight: 100;
+}
+
+.card{
+    background-color: #10b981;
+    border-radius: 5vh;
+    height: 50vh;
+    padding: 0 2vh 2vh 2vh;
+}
+
+.countdown{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    padding: 5vh;
+    margin-bottom: -4vh;
+    font-size: 10vh;
+}
+
+input{
+    border-radius: 3vh;
+    margin: 3vh 0 2vh;
+    text-align: center;
+    border-style: none;
+    padding: 2vh;
+    font-size: 3vh;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    
+}
+
+
+label{
+    font-size: 4vh;
+}
+
+#lblmin {
+    padding-right: 1.5vh;
+}
+
+button{
+    border-radius: 5vh;
+    border-style: none;
+    padding: 2vh 5vh 2vh 5vh;
+    margin: 2vh 6vh;
+    cursor: pointer;
+    background-color: #059669;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #022c22;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+button:disabled {
+    color: #047857;
+    background-color: #a7f3d0;
+}

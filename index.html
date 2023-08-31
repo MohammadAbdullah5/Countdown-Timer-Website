@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Countdown Timer by Abdullah</title>
+</head>
+<body>
+    <h1>Clock-Timer</h1>
+    <div class="card">
+        <div class="countdown">
+            <span id="countdownDisplay">00:00</span>
+        </div>
+        <label for="minutes" id="lblmin">Minutes:</label>
+        <input type="number" id="minutes" min="0" placeholder="0" class="inp">
+        <br>
+        <label for="seconds">Seconds:</label>
+        <input type="number" id="seconds" min="0" placeholder="0" class="inp">
+        <br>
+        <button id="start">Start</button>
+        <button id="restart">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -8,9 +8,13 @@ let countdownInterval;
 let totalSeconds = 0;
 
 function startTimer() {
-    totalSeconds = parseInt(minutesInput.value) * 60 + parseInt(secondsInput.value);
+    
+    const enteredMinutes = parseInt(minutesInput.value) || 0;
+    const enteredSeconds = parseInt(secondsInput.value) || 0;
+    totalSeconds = enteredMinutes * 60 + enteredSeconds;
 
-    if (isNaN(totalSeconds) || totalSeconds <= 0) {
+    if (enteredMinutes === 0 && enteredSeconds === 0) {
+        alert('Please enter a valid time (minutes and/or seconds) to start the timer.');
         return;
     }
 
